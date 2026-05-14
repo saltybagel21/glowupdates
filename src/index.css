@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ivory: #EADBC4;
+    --cream: #FBF4E8;
+    --champagne: #D8C3A5;
+    --soft-gold: #B89B72;
+    --warm-brown: #6F5948;
+    --silk-brown: #3D2E22;
+    --deep-olive: #4A5942;
+    --footer-green: #3E4A37;
+    --soft-black: #1E1B18;
+    --mist: #E2D2B8;
+
+    --background: 33 39% 84%;
+    --foreground: 25 8% 11%;
+    --card: 40 60% 99%;
+    --card-foreground: 25 8% 11%;
+    --popover: 40 60% 99%;
+    --popover-foreground: 25 8% 11%;
+    --primary: 98 13% 20%;
+    --primary-foreground: 37 47% 97%;
+    --secondary: 34 25% 83%;
+    --secondary-foreground: 25 8% 11%;
+    --muted: 36 28% 90%;
+    --muted-foreground: 25 8% 40%;
+    --accent: 36 28% 90%;
+    --accent-foreground: 98 13% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 34 25% 83%;
+    --input: 34 25% 83%;
+    --ring: 98 13% 20%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background-color: #EADBC4;
+    color: #1E1B18;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-ivory { color: #EADBC4; }
+  .text-cream { color: #FBF4E8; }
+  .text-champagne { color: #D8C3A5; }
+  .text-soft-gold { color: #B89B72; }
+  .text-warm-brown { color: #6F5948; }
+  .text-silk-brown { color: #3D2E22; }
+  .text-deep-olive { color: #4A5942; }
+  .text-footer-green { color: #3E4A37; }
+  .text-soft-black { color: #1E1B18; }
+  .text-mist { color: #E2D2B8; }
+
+  .bg-ivory { background-color: #EADBC4; }
+  .bg-cream { background-color: #FBF4E8; }
+  .bg-champagne { background-color: #D8C3A5; }
+  .bg-soft-gold { background-color: #B89B72; }
+  .bg-warm-brown { background-color: #6F5948; }
+  .bg-silk-brown { background-color: #3D2E22; }
+  .bg-deep-olive { background-color: #4A5942; }
+  .bg-footer-green { background-color: #3E4A37; }
+  .bg-soft-black { background-color: #1E1B18; }
+  .bg-mist { background-color: #E2D2B8; }
+
+  .border-champagne { border-color: #D8C3A5; }
+  .border-soft-gold { border-color: #B89B72; }
+  .border-deep-olive { border-color: #4A5942; }
+  .border-warm-brown { border-color: #6F5948; }
+
+  .champagne-border {
+    border: 0.5px solid #D8C3A5;
+  }
+
+  .gold-border {
+    border: 0.5px solid #B89B72;
+  }
+
+  .focus-glow:focus-visible {
+    outline: 2px solid #4A5942;
+    outline-offset: 2px;
+  }
+}
